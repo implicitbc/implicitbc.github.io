@@ -6,14 +6,6 @@
         <meta name="viewport" content="width=1000">
         <link rel="stylesheet" href="https://use.typekit.net/quv7bsd.css"> <!-- fonts -->
         <link rel="stylesheet" href="style.css" />
-        <script>
-          (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-          (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-          m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-          })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-          ga('create', 'UA-89797207-1', 'auto');
-          ga('send', 'pageview');
-        </script>
     </head>
     <body id="body">
         <div id="main"> 
@@ -24,7 +16,8 @@
                 <!-- <img src="images/profile.jpg"> -->
                 <div id="profile-desc">
                     <div id="profile-name"><b>Implicit Behavioral Cloning</b>
-                        <p><br>Conference on Robot Learning (CoRL) 2021</p>
+                        <p><br>Conference on Robot Learning (CoRL) 2021</p><br>
+                        <p><a href="github.com">Code (GitHub)</a> &nbsp &nbsp <a href="github.com">Paper (arXiv)</a><p>
                     </div>
                     <p>
                         <b>Abstract</b>. We find that across a wide range of robot policy learning scenarios, treating supervised policy learning with an implicit model generally performs better, on average, than commonly used explicit models. We present extensive experiments on this finding, and we provide both intuitive insight and theoretical arguments distinguishing the properties of implicit models compared to their explicit counterparts, particularly with respect to approximating complex, potentially discontinuous and multi-valued (set-valued) functions. On robotic policy learning tasks we show that implicit behavioral cloning policies with energy-based models (EBM) often outperform common explicit (Mean Square Error, or Mixture Density) behavioral cloning policies, including on tasks with high-dimensional action spaces and visual image inputs. We find these policies provide competitive results or outperform state-of-the-art offline reinforcement learning methods on the challenging human-expert tasks from the D4RL benchmark suite, despite using no reward information. In the real world, robots with implicit policies can learn complex and remarkably subtle behaviors on contact-rich tasks from human demonstrations, including tasks with high combinatorial complexity and tasks requiring 1mm precision.
@@ -32,58 +25,62 @@
                 </div>
                 <div style="clear: both;"></div>
             </div>
+
+            <div class="section paper">
+                <h1>Highlights</h1>
+            </div>
             
             <div class="section recent-work">
-                <h2 style="text-align:center"><b>"Particle" Task</b>: agent (black dot) should move to the green dot, then the blue dot.</h2><br>
+                <p style="text-align:center"><b>"Particle" Task</b>: agent (black dot) should move to the green dot, then the blue dot.</p><br>
                 <div class="highlight-proj2by">
-                    <video height="240" controls width="100%" playsinline="" muted="" autoplay="" loop="">
+                    <video height="240" width="100%" playsinline="" muted="" autoplay="" loop="">
                         <source src="images/particle_langevin_H264.mp4" type="video/mp4">
                     </video>
-                    <p>Implicit BC (ours)</p>
+                    <p style="font-size: 16px">Implicit BC (ours)</p>
                 </div>
                 <div class="highlight-proj2by">
-                    <video height="240" controls width="100%" playsinline="" muted="" autoplay="" loop="">
+                    <video height="240" width="100%" playsinline="" muted="" autoplay="" loop="">
                         <source src="images/particle_mse_H264.mp4" type="video/mp4">
                     </video>
-                    <p>Explicit BC (baseline)</p>
+                    <p style="font-size: 16px">Explicit BC (baseline)</p>
                 </div>
             </div>
             <div class="divider"></div>
             <br>
 
             <div class="section recent-work">
-                <h2 style="text-align:center"><b>"Planar Sweeping" Task</b>: agent (stick) should sweep all particles into the target region.</h2><br>
+                <p style="text-align:center"><b>"Planar Sweeping" Task</b>: agent (stick) should sweep all particles into the target region.</p><br>
 
                 <div class="highlight-proj2by">
-                    <video height="240" controls width="100%" playsinline="" muted="" autoplay="" loop="">
+                    <video height="240" width="100%" playsinline="" muted="" autoplay="" loop="">
                         <source src="images/pymunk-sweeping-ebm-best.mp4" type="video/mp4">
                     </video>
-                    <p>Implicit BC (ours)</p>
+                    <p style="font-size: 16px">Implicit BC (ours)</p>
                 </div>
                 <div class="highlight-proj2by">
-                    <video height="240" controls width="100%" playsinline="" muted="" autoplay="" loop="">
+                    <video height="240" width="100%" playsinline="" muted="" autoplay="" loop="">
                         <source src="images/pymunk-sweeping-mse-best.mp4" type="video/mp4">
                     </video>
-                    <p>Explicit BC (baseline)</p>
+                    <p style="font-size: 16px">Explicit BC (baseline)</p>
                 </div>
             </div>
             <div class="divider"></div>
             <br>
 
             <div class="section recent-work">
-                <h2 style="text-align:center"><b>"Bi-Manual Sweeping" Task</b>: agent (two robot arms) should sweep all particles into the two bowls.</h2><br>
+                <p style="text-align:center"><b>"Bi-Manual Sweeping" Task</b>: agent (two robot arms) should sweep all particles into the two bowls.</p><br>
 
                 <div class="highlight-proj2by">
-                    <video height="240" controls width="100%" playsinline="" muted="" autoplay="" loop="">
+                    <video height="240" width="100%" playsinline="" muted="" autoplay="" loop="">
                         <source src="images/bimanual-sweeping-ebm-best-crop.mp4" type="video/mp4">
                     </video>
-                    <p>Implicit BC (ours)</p>
+                    <p style="font-size: 16px">Implicit BC (ours)</p>
                 </div>
                 <div class="highlight-proj2by">
-                    <video height="240" controls width="100%" playsinline="" muted="" autoplay="" loop="">
+                    <video height="240" width="100%" playsinline="" muted="" autoplay="" loop="">
                         <source src="images/bimanual-sweeping-mse-best-crop.mp4" type="video/mp4">
                     </video><!-- </a> -->
-                    <p>Explicit BC (baseline)</p>
+                    <p style="font-size: 16px">Explicit BC (baseline)</p>
                 </div>
             </div>
             <br>
@@ -98,12 +95,18 @@
             <div class="section paper half">
                 <h1>Code</h1>
                 <p>
-                    Code is available! On <a href="https://github.com/google-research/ibc">Github</a>.
-                    <!-- Includes:<br> -->
-                    <!-- &nbsp;&nbsp;&bull;&nbsp;&nbsp;Simulation environments (Ravens with PyBullet).<br> -->
-                    <!-- &nbsp;&nbsp;&bull;&nbsp;&nbsp;Training/testing code (with TensorFlow/Python).<br> -->
+                    Code is available on <a href="https://github.com/google-research/ibc">Github</a>!.
+                    Includes:<br>
+                    <p style="font-size: 16px">
+                    &nbsp;&nbsp;&bull;&nbsp;&nbsp;Simulation environments: Particle, Simulated Robot, D4RL tasks.<br>
+                    &nbsp;&nbsp;&bull;&nbsp;&nbsp;Downloadable data for tasks.<br>
+                    &nbsp;&nbsp;&bull;&nbsp;&nbsp;IBC implementation (Langevin and DFO).<br>
+                    &nbsp;&nbsp;&bull;&nbsp;&nbsp;MSE and MDN baselines.<br>
+                    &nbsp;&nbsp;&bull;&nbsp;&nbsp;Configurations for trainings.<br>
+                    &nbsp;&nbsp;&bull;&nbsp;&nbsp;10-minute Quickstart.<br>
                     <!-- &nbsp;&nbsp;&bull;&nbsp;&nbsp;Pre-trained models and datasets.<br><br> -->
                     <!-- Simple toy examples with JAX and Flax in <a href="https://colab.research.google.com/drive/13VTA8nLM8AuzXuygQA1X_KWzLLxVPJhM?usp=sharing">Colab</a>.<br> -->
+                </p>
                 </p>
 
             </div>

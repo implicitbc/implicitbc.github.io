@@ -55,7 +55,7 @@ table {
 }
 
 p {
-    font-size: 14px;
+    font-size: 18px;
     line-height: 24px;
 }
 
@@ -103,8 +103,9 @@ h1 {
 
 #profile-name {
     width: 100%;
-    font-size: 24px;
+    font-size: 38px;
     line-height: 24px;
+    text-align: center;
     color: #191e3f;
     margin-bottom: 10px;
     float: left;
@@ -404,7 +405,7 @@ ul {
 
 .research-proj h2 {
     color: #191e3f;
-    font-size: 16px;
+    font-size: 18px;
     line-height: 26px;
 }
 
